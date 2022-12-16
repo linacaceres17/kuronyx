@@ -1,0 +1,34 @@
+<img src="assets/images/fondo.png" alt="fondo">
+<p>En Kuronyx todas las prendas son confeccionadas con mucho amor, enfocadas en brindar los mejores outfits para ti y tu estilo.</p>
+<div class="zorrito">
+    <img src="assets/images/KURONYX ZORRITO.png" alt ="zorrito">
+    <img src="assets/images/nombre.jpg" alt ="zorrito">
+    
+</div>
+<ul>
+    <li *ngFor="let clothes of clothes">
+        <a>
+            <img src="{{clothes.imageUrl}}" alt="">
+            <div class="content">
+                <div class="name">
+                    {{clothes.name}}
+                </div>
+                <span class="favorite {{clothes.favorite?'':'not'}}">
+                    ❤
+                </span>
+                <div class="product-item-footer">
+                    <div class="origins">
+                        <span *ngFor="let origin of clothes.origins">
+                             {{origin}}
+                        </span>
+                </div>
+            </div>
+            <div class="price">
+                <span>
+                    {{clothes.price|currency}}
+                </span>
+            </div>
+            </div>
+        </a>
+    </li>
+</ul>
