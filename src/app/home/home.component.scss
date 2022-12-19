@@ -41,7 +41,36 @@ Ul li a{
     overflow: hidden;
     color: rgb(117, 63, 129);
 }
+
 li a:hover{
     opacity: 0.9;
     cursor: pointer;
+}
+
+.content{
+    padding: 1rem;
+    position: relative;
+}
+
+.favorite{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    color: #7B241C;
+}
+.favorite.not{
+    color:gray;
+}
+
+.origins span{
+    border-radius: 2rem;
+    display: inline-block;
+    font-size: .7rem;
+    color: gray;
+    margin-right: .3rem;
+} 
+
+.price{
+    color:#7b1c7b;
 }
