@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
+import { ClothespageComponent } from './clothespage/clothespage.component';
 
  
 @NgModule({
@@ -15,6 +16,7 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     HomeComponent,
     SearchComponent,
+    ClothespageComponent,
   ],
   imports: [
     BrowserModule,

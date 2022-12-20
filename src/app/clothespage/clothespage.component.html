@@ -1,0 +1,24 @@
+<div class="container">
+<img [src]="clothes.imageUrl" [alt]="clothes.name">
+<div class="details">
+    <div class="header">
+        <span class="name">
+            {{clothes.name}}
+        </span>
+        <span class="favorite {{clothes.favorite?'':'not'}}">
+            ❤
+        </span>
+    </div>
+    <div class="origins">
+        <span *ngFor="let origin of clothes.origins">
+            {{origin}}
+        </span>
+    </div>
+    <div class="price">
+        <span>
+            {{clothes.price|currency}}
+        </span>
+    </div>
+    <button>Add to Cart</button>
+</div>
+</div>

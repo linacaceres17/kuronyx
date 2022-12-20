@@ -7,7 +7,7 @@
 <app-search></app-search>
 <ul>
     <li *ngFor="let clothes of clothes">
-        <a>
+        <a routerLink="/clothes/{{clothes.id}}">
             <img src="{{clothes.imageUrl}}" alt="">
             <div class="content">
                 <div class="name">

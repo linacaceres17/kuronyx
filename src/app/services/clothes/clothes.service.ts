@@ -7,6 +7,10 @@ import { clothes } from 'src/app/shared/models/clothes';
 export class ClothesService {
 
   constructor() { }
+  
+  getClothesById(id: number): clothes{
+    return this.getAll().find(clothes => clothes.id == id)!;
+  }
 
   getAll():clothes[]{
     return[
@@ -231,5 +235,4 @@ export class ClothesService {
         tags: ['falda de prenses,falda de linea'],
       }
     ]
-  }
-}
+  }}
