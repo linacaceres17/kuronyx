@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { ClothespageComponent } from './clothespage/clothespage.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
 
  
 @NgModule({
@@ -17,6 +18,7 @@ import { ClothespageComponent } from './clothespage/clothespage.component';
     HomeComponent,
     SearchComponent,
     ClothespageComponent,
+    CartPageComponent,
   ],
   imports: [
     BrowserModule,
