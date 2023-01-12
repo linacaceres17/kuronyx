@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    color: rgb(11, 11, 11);
+    align-items: center;
+}
+.zorrito{
+    display: flex;
+    align-items: flex-end;
+    width: 50px;
+    height: 50px;
+}
+.buttons{
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+.buttons a{
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: black;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5 );
+    transition: all .4s ease-in-out;
+}
+.buttons a:hover{
+    transform: scale(1.2);
+    color: rgb(149, 82, 148);
+}
+@media screen and (max-width:800px){
+    .buttons{
+        min-width: 100px;
+        display: flex;
+        justify-content: space-around;
+}}

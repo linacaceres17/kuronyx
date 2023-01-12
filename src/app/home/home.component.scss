@@ -67,3 +67,9 @@ li a:hover{
 .price{
     color:#7b1c7b;
 }
+@media screen and (max-width:800px){
+.banner{
+    display: flex;
+    width: 90%;
+    height: 100px;
+}}
