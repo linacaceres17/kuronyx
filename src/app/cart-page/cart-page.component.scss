@@ -103,3 +103,15 @@ ul .remove-button:hover{
     content: 'Price: ';
     color: grey;
 }
+
+.buttonbuy{
+    align-items: center;
+    border: none;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 500;
+    height: 100%;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+}
