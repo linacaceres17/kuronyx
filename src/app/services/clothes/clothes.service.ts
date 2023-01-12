@@ -21,7 +21,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa1.jpg',
+        imageUrl: 'assets/images/ropa1.jpg',
         tags: ['falda de prenses, falda negra, falda de linea'],
       },
       {
@@ -31,7 +31,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa2.jpg',
+        imageUrl: 'assets/images/ropa2.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -41,7 +41,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa3.jpg',
+        imageUrl: 'assets/images/ropa3.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -51,7 +51,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa4.jpg',
+        imageUrl: 'assets/images/ropa4.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -61,7 +61,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa5.jpg',
+        imageUrl: 'assets/images/ropa5.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -71,7 +71,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa6.jpg',
+        imageUrl: 'assets/images/ropa6.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -81,7 +81,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa7.jpg',
+        imageUrl: 'assets/images/ropa7.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -91,7 +91,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa8.jpg',
+        imageUrl: 'assets/images/ropa8.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -101,7 +101,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa9.jpg',
+        imageUrl: 'assets/images/ropa9.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -111,7 +111,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa10.jpg',
+        imageUrl: 'assets/images/ropa10.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -121,7 +121,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa11.jpg',
+        imageUrl: 'assets/images/ropa11.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -131,7 +131,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa12.jpg',
+        imageUrl: 'assets/images/ropa12.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -141,7 +141,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa13.jpg',
+        imageUrl: 'assets/images/ropa13.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -151,7 +151,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa14.jpg',
+        imageUrl: 'assets/images/ropa14.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -161,7 +161,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa15.jpg',
+        imageUrl: 'assets/images/ropa15.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -171,7 +171,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa16.jpg',
+        imageUrl: 'assets/images/ropa16.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -181,7 +181,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa17.jpg',
+        imageUrl: 'assets/images/ropa17.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -191,7 +191,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa18.jpg',
+        imageUrl: 'assets/images/ropa18.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -201,7 +201,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa19.jpg',
+        imageUrl: 'assets/images/ropa19.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -211,7 +211,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa20.jpg',
+        imageUrl: 'assets/images/ropa20.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -221,7 +221,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa21.jpg',
+        imageUrl: 'assets/images/ropa21.jpg',
         tags: ['falda de prenses,falda de linea'],
       },
       {
@@ -231,7 +231,7 @@ export class ClothesService {
         favorite: false, 
         origins: ['Made in Colombia'],
         stars: 4.5,
-        imageUrl: '/assets/images/ropa22.jpg',
+        imageUrl: 'assets/images/ropa22.jpg',
         tags: ['falda de prenses,falda de linea'],
       }
     ]
