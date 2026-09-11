@@ -6,14 +6,29 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  menuOpen = false;
+  themeMode: 'dark' | 'light' = 'dark';
 
+  constructor() {
+    this.applyTheme();
+  }
+
+  toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  closeMenu(): void {
+    this.menuOpen = false;
+  }
+
+  toggleTheme(): void {
+    this.themeMode = this.themeMode === 'dark' ? 'light' : 'dark';
+    this.applyTheme();
+  }
+
+  private applyTheme(): void {
+    document.body.classList.toggle('light-theme', this.themeMode === 'light');
+  }
 }
-/* Cuando hago click .button, .nav Toggle 'activo' */
-
-const button = (document.querySelector('.button') as HTMLButtonElement);
-const nav  = (document.querySelector('.nav') as HTMLElement);
-
-/*button.addEventListener('click',() :void => {})
-nav.classList.toggle('activo') */
 
 

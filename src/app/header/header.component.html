@@ -1,36 +1,60 @@
 <header>
-<div class="container">
+  <div class="container">
     <a href="#" routerLink="/" class="logo">
-        <img srcset="" src="assets/images/KURONYX ZORRITO.png" loading="lazy" class="header__heading-logo" width="600" height="377" alt="KURONYX">
+      <img srcset="" src="assets/images/KURONYX ZORRITO.png" loading="lazy" class="header__heading-logo" width="600" height="377" alt="KURONYX">
     </a>
+
     <img srcset="" src="assets/images/kuronyxnegro1.jpg" loading="lazy" class="header__heading-name">
-    <nav>
+
+    <div class="header__actions">
+      <button
+        type="button"
+        class="theme-toggle"
+        (click)="toggleTheme()"
+        [attr.aria-label]="themeMode === 'dark' ? 'Cambiar al modo claro' : 'Cambiar al modo oscuro'"
+      >
+        <span>{{ themeMode === 'dark' ? '☀️' : '🌙' }}</span>
+      </button>
+
+      <nav>
         <ul>
-            <li>
-                <a href="#" routerLink="/cart-page">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                      </svg>
-                </a>
-            </li>
+          <li>
+            <a href="#" routerLink="/cart-page" aria-label="Carrito">
+              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+            </a>
+          </li>
         </ul>
-    </nav>
-</div>
+      </nav>
+    </div>
+  </div>
 </header>
+
 <header class="header2">
-    <!-- <button class="button">
-        <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg>
-    </button> -->
-    <nav class="nav activo">
-    <ul class="ul1">
-        <li class="header__li"><a routerLink="/search/blusa" routerLinkActive="active" class="header__a">Blusas</a></li>
-        <li class="header__li"><a routerLink="/search/Pantalon" routerLinkActive="active" class="header__a">Pantalones</a></li>
-        <li class="header__li"><a routerLink="/search/medias" routerLinkActive="active" class="header__a">Accesorios</a></li>
-        <li class="header__li"><a routerLink="/search/falda" routerLinkActive="active" class="header__a">Faldas</a></li>
-      
-    </ul>
+  <div class="header2__inner">
+    <button
+      type="button"
+      class="menu-toggle"
+      [attr.aria-expanded]="menuOpen"
+      [class.menu-toggle--open]="menuOpen"
+      aria-label="Abrir menú"
+      (click)="toggleMenu()"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" [class.nav--open]="menuOpen">
+      <ul class="ul1 main-menu">
+        <li class="header__li"><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="header__a" (click)="closeMenu()">Inicio</a></li>
+        <li class="header__li"><a routerLink="/tienda" routerLinkActive="active" class="header__a" (click)="closeMenu()">Tienda</a></li>
+        <li class="header__li"><a routerLink="/catalogo" routerLinkActive="active" class="header__a" (click)="closeMenu()">Catalogo</a></li>
+        <li class="header__li"><a routerLink="/sobre-nosotros" routerLinkActive="active" class="header__a" (click)="closeMenu()">Sobre nosotros</a></li>
+        <li class="header__li"><a routerLink="/blogs" routerLinkActive="active" class="header__a" (click)="closeMenu()">Blogs</a></li>
+      </ul>
     </nav>
-    </header>
+  </div>
+</header>
 

@@ -1,33 +1,95 @@
-<!-- <img src="assets/images/fondo.png" alt="fondo"> -->
-<p>En Kuronyx todas las prendas son confeccionadas con mucho amor, enfocadas en brindar los mejores outfits para ti y tu estilo.</p>
-<div class="banner">
-    <img srcset="" src="assets/images/banner2.jpg" loading="lazy" class="header__heading-name">
+<div class="home-page">
+    <section class="hero">
+        <div class="hero__content">
+            <span class="hero__eyebrow">Nuevo estilo</span>
+            <h1>Descubre la esencia de Kuronyx</h1>
+            <p>
+                En Kuronyx todas las prendas son confeccionadas con mucho amor, enfocadas en brindar los mejores outfits para ti y tu estilo.
+            </p>
+            <div class="hero__actions">
+                <a routerLink="/search/blusa" class="hero__button hero__button--primary">Ver colecciones</a>
+                <a href="#products" class="hero__button hero__button--secondary">Explorar prendas</a>
+            </div>
+            <ul class="hero__stats">
+                <li>
+                    <strong>350+</strong>
+                    <span>modelos</span>
+                </li>
+                <li>
+                    <strong>24h</strong>
+                    <span>envío rápido</span>
+                </li>
+                <li>
+                    <strong>4.9/5</strong>
+                    <span>valoración</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hero__visual" aria-label="Promoción de Kuronyx">
+            <div class="visual__glow"></div>
+            <div class="visual__card visual__card--top">
+                <span>Best seller</span>
+                <strong>Outfit urbano</strong>
+                <small>Edición limitada</small>
+            </div>
+            <img src="assets/images/Banner2.jpg" alt="Banner promocional de Kuronyx" loading="eager">
+            <div class="visual__card visual__card--bottom">
+                <span>Entrega rápida</span>
+                <strong>Envíos nacionales</strong>
+            </div>
+        </div>
+    </section>
+
+    <nav class="category-menu" aria-label="Categorías de productos">
+        <a [routerLink]="['/search', 'blusa']" [fragment]="'products'" class="category-menu__item">Blusas</a>
+        <a [routerLink]="['/search', 'Pantalon']" [fragment]="'products'" class="category-menu__item">Pantalones</a>
+        <a [routerLink]="['/search', 'medias']" [fragment]="'products'" class="category-menu__item">Accesorios</a>
+        <a [routerLink]="['/search', 'falda']" [fragment]="'products'" class="category-menu__item">Faldas</a>
+    </nav>
+
+    <app-search></app-search>
+
+    <section id="products" class="products-section">
+        <div class="products-section__header">
+            <div>
+                <span class="products-section__eyebrow">Destacados</span>
+                <h2>Prendas que combinan estilo y comodidad</h2>
+            </div>
+            <p>Encuentra piezas modernas, frescas y fáciles de combinar para cada día.</p>
+        </div>
+
+        <ul class="products-grid">
+            <li *ngFor="let clothes of clothes">
+                <a routerLink="/clothes/{{clothes.id}}" class="product-card">
+                    <div class="product-card__image-wrapper">
+                        <img [src]="clothes.imageUrl" [alt]="clothes.name" loading="lazy">
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__top-row">
+                            <div class="name">
+                                {{clothes.name}}
+                            </div>
+                            <span class="favorite {{clothes.favorite ? '' : 'not'}}">
+                                ❤
+                            </span>
+                        </div>
+
+                        <div class="product-item-footer">
+                            <div class="origins">
+                                <span *ngFor="let origin of clothes.origins">
+                                    {{origin}}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span>
+                                {{clothes.price|currency}}
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
 </div>
-<app-search></app-search>
-<ul>
-    <li *ngFor="let clothes of clothes">
-        <a routerLink="/clothes/{{clothes.id}}">
-            <img src="{{clothes.imageUrl}}" alt="">
-            <div class="content">
-                <div class="name">
-                    {{clothes.name}}
-                </div>
-                <span class="favorite {{clothes.favorite?'':'not'}}">
-                    ❤
-                </span>
-                <div class="product-item-footer">
-                    <div class="origins">
-                        <span *ngFor="let origin of clothes.origins">
-                             {{origin}}
-                        </span>
-                </div>
-            </div>
-            <div class="price">
-                <span>
-                    {{clothes.price|currency}}
-                </span>
-            </div>
-            </div>
-        </a>
-    </li>
-</ul>

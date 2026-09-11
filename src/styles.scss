@@ -1,16 +1,76 @@
 
-*{
+:root {
+    --bg-page: #090909;
+    --bg-surface: #111111;
+    --bg-surface-alt: #1a1a1a;
+    --card-border: rgba(255, 255, 255, 0.09);
+    --text-primary: #f5f5f5;
+    --text-secondary: rgba(255, 255, 255, 0.72);
+    --text-muted: rgba(255, 255, 255, 0.58);
+    --accent: #d09ae0;
+    --accent-strong: #9a4ca8;
+    --accent-soft: rgba(154, 76, 168, 0.18);
+    --header-bg: #000000;
+    --header-border: #ffffff;
+    --button-text: #ffffff;
+    --shadow-soft: rgba(0, 0, 0, 0.25);
+}
+
+body.light-theme {
+    --bg-page: #f5f1f7;
+    --bg-surface: #ffffff;
+    --bg-surface-alt: #f0e8f4;
+    --card-border: rgba(94, 58, 97, 0.14);
+    --text-primary: #1f1f1f;
+    --text-secondary: rgba(31, 31, 31, 0.74);
+    --text-muted: rgba(31, 31, 31, 0.62);
+    --accent: #8f3f9a;
+    --accent-strong: #6d2b7d;
+    --accent-soft: rgba(143, 63, 154, 0.12);
+    --header-bg: #f7f0fa;
+    --header-border: #d9c0df;
+    --button-text: #ffffff;
+    --shadow-soft: rgba(74, 42, 78, 0.12);
+}
+
+* {
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0;
-    font-size: 18px;
+    min-height: 100vh;
+    font-size: clamp(0.95rem, 0.7vw + 0.8rem, 1.125rem);
+    line-height: 1.5;
+    background: var(--bg-page);
+    color: var(--text-primary);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.25s ease, color 0.25s ease;
 }
-a{
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
     text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+button,
+input,
+select {
+    font: inherit;
 }
